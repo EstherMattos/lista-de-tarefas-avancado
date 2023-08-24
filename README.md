@@ -1,3 +1,49 @@
+# Projeto: Aplicativo de Lista de Tarefas Avançado
+
+Neste projeto desafiador, você criará um aplicativo de lista de tarefas com funcionalidades avançadas. O objetivo é aprofundar seus conhecimentos em React e desenvolvimento web.
+
+## Funcionalidades do Aplicativo
+
+1. **Lista de Tarefas:**
+   - Exibir uma lista de tarefas que podem ser marcadas como concluídas ou não.
+   - Permitir a adição de novas tarefas.
+   - Possibilitar a edição e exclusão de tarefas.
+
+2. **Filtros e Ordenação:**
+   - Permitir a filtragem de tarefas por status (concluídas, não concluídas).
+   - Opções para ordenar as tarefas por data de criação ou conclusão.
+
+3. **Gestão de Estado:**
+   - Utilizar um estado global para gerenciar as tarefas.
+   - Implementar uma estrutura de gerenciamento de estado como Redux ou o Context API.
+
+4. **Persistência de Dados:**
+   - Integrar com uma API ou serviço de armazenamento (por exemplo, Firebase, JSONPlaceholder) para salvar as tarefas remotamente.
+   - Implementar persistência local usando o `localStorage` ou `IndexedDB` para que as tarefas sejam mantidas mesmo após o navegador ser recarregado.
+
+5. **Design e Estilização:**
+   - Criar um design atraente e responsivo para o aplicativo.
+   - Utilizar bibliotecas de estilização, como CSS-in-JS (Styled Components, Emotion) ou algum framework como Bootstrap ou Material-UI.
+
+6. **Funcionalidades Avançadas:**
+   - Implementar a funcionalidade de adicionar data de vencimento às tarefas.
+   - Permitir a categorização de tarefas por tags ou projetos.
+   - Criar uma funcionalidade de busca para encontrar tarefas específicas.
+
+7. **Autenticação e Permissões:**
+   - Adicionar um sistema de autenticação para que os usuários possam criar contas e fazer login.
+   - Implementar permissões para que cada usuário só possa ver e modificar suas próprias tarefas.
+
+8. **Testes e Deploy:**
+   - Criar testes unitários e de integração para garantir a robustez do aplicativo.
+   - Fazer o deploy do aplicativo em uma plataforma de hospedagem, como Vercel, Netlify ou GitHub Pages.
+
+Este projeto abrange diversas áreas do desenvolvimento React, como manipulação de estado, componentização, interações avançadas, persistência de dados e integração com APIs. Ele será um desafio estimulante para consolidar seu conhecimento em React e desenvolvimento web. Lembre-se de que projetos desafiadores podem levar tempo, portanto, siga passo a passo e consulte a documentação e recursos conforme necessário.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +114,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
