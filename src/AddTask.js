@@ -2,25 +2,15 @@ import React, {useState} from 'react';
 import {useTaskContext} from './TaskContext';
 
 function AddTask(){
-    const { fetchTasks } = useTaskContext();
+    const { addTask } = useTaskContext();
     const [title, setTitle] = useState('');
 
-    const handleSubmit = async e => {
+    const handleSubmit = e => {
         e.preventDefault();
         if(title.trim()){
-            try{
-                await fetch('https://jsonplaceholder.typicode.com/todos', {
-                    method: 'POST',
-                    body: JSON.stringify({title, completed: false}),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-                fetchTasks();
-                setTitle('');
-            }catch(error){
-                console.log('Error adding task:', error);
-            }
+            const newTask = {id: Date.now(), title, completed: false};
+            addTask( newTask );
+            setTitle('');
         }
     };
 
