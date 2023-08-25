@@ -21,8 +21,24 @@ export function TaskProvider({ children }) {
         setTasks(prevTasks => [...prevTasks, newTask]);
     };
 
+    const editTask = (taskId, newTitle) => {
+        setTasks(prevTasks =>
+            prevTasks.map(task =>
+                task.id === taskId ? { ...task, title: newTitle } : task
+            )
+        );
+    };
+
+    // const deleteTask = (taskId) => {
+    //     setTasks(prevTasks =>
+    //         prevTasks.map(task =>
+    //             task.id === taskId ? { ...task, title: newTitle } : task
+    //         )
+    //     );
+    // };
+
     return (
-        <TaskContext.Provider value={{ tasks, fetchTasks, addTask }}>
+        <TaskContext.Provider value={{ tasks, fetchTasks, addTask, editTask }}>
             {children}
         </TaskContext.Provider>
     );
