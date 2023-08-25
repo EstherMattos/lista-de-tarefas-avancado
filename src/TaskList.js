@@ -7,11 +7,11 @@ function TaskList(){
     const {tasks} = useTaskContext();
     
     return (
-        <div>
-            <h2>Lista de Tarefas</h2>
-            <ul>
+        <div class="lista-tarefas">
+            <h2 class="titulo">To do List</h2>
+            <ul class="lista">
                 {tasks.map(task => (
-                    <li key={task.id}>
+                    <li class="item" key={task.id}>
                         {task.title}
                         <EditTask task={task} />
                         <DeleteTask task={task.id} />

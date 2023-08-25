@@ -10,7 +10,9 @@ function DeleteTask({ taskId }){
     };
 
     return(
-        <button onClick={ handleDelete }>Deletar</button>
+        <div class="lista-tarefas">
+            <button onClick={ handleDelete }>Deletar</button>
+        </div>
     );
 }
 

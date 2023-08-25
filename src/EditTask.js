@@ -15,7 +15,7 @@ function EditTask({ task }){
     };
 
     return(
-        <div>
+        <div class="lista-tarefas">
             {editMode ? (
                 <form onSubmit={ handleEdit }>
                     <input type="text" value={editedTitle} onChange={(e) => setEditedTitle(e.target.value)} />

@@ -15,7 +15,7 @@ function AddTask(){
     };
 
     return (
-        <div>
+        <div class="lista-tarefas">
             <h2>Adicionar Tarefa</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Nova Tarefa"/>
