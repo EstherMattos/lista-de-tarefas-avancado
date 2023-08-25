@@ -29,16 +29,14 @@ export function TaskProvider({ children }) {
         );
     };
 
-    // const deleteTask = (taskId) => {
-    //     setTasks(prevTasks =>
-    //         prevTasks.map(task =>
-    //             task.id === taskId ? { ...task, title: newTitle } : task
-    //         )
-    //     );
-    // };
+    const deleteTask = (taskId) => {
+        setTasks(prevTasks =>
+            prevTasks.filter(task => task.id !== taskId)
+        );
+    };
 
     return (
-        <TaskContext.Provider value={{ tasks, fetchTasks, addTask, editTask }}>
+        <TaskContext.Provider value={{ tasks, fetchTasks, addTask, editTask, deleteTask}}>
             {children}
         </TaskContext.Provider>
     );

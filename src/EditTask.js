@@ -17,14 +17,13 @@ function EditTask({ task }){
     return(
         <div>
             {editMode ? (
-                <form onSubmit={handleEdit}>
+                <form onSubmit={ handleEdit }>
                     <input type="text" value={editedTitle} onChange={(e) => setEditedTitle(e.target.value)} />
                     <button type="submit">Salvar</button>
                     <button onClick={() => setEditMode(false)}>Cancelar</button>
                 </form>
             ) : (
                 <div>
-                    <span>{task.title}</span>
                     <button onClick={() => setEditMode(true)}>Editar</button>
                 </div>
             )}
